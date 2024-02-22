@@ -80,6 +80,7 @@ public class EditController implements Initializable {
             AnchorPane content = contentLoader.load();
             ticketListPane.getChildren().setAll(content);
         } catch (IOException ex) {
+
             Logger.getLogger(EditController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
