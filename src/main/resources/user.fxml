@@ -12,12 +12,12 @@
         <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
         <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="450.0">
             <children>
-                <Text fx:id="nom" fill="#000000" layoutX="151.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="235.13671875">
+                <Text fx:id="nom" fill="#512300" layoutX="151.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="235.13671875">
                     <font>
                         <Font name="Verdana Bold" size="14.0" />
                     </font>
                 </Text>
-                <Text fx:id="email" fill="#000000" layoutX="151.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="235.13671875">
+                <Text fx:id="email" fill="#512300" layoutX="151.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="235.13671875">
                     <font>
                         <Font name="Verdana Bold" size="14.0" />
                     </font>
@@ -27,7 +27,7 @@
                         <Image url="/images/perr.png" />
                     </image>
                 </ImageView>
-                <Button fx:id="btinfos" layoutX="151.0" layoutY="99.0" mnemonicParsing="false" onAction="#infos" style="-fx-background-color: rgba(238,213,88,0.71);" text="Plus d'informations" textFill="WHITE">
+                <Button fx:id="btinfos" layoutX="151.0" layoutY="99.0" mnemonicParsing="false" onAction="#infos" style="-fx-background-color: rgb(81,12,7);" text="Plus d'informations" textFill="WHITE">
                     <font>
                         <Font name="Verdana Bold" size="14.0" />
                     </font></Button>

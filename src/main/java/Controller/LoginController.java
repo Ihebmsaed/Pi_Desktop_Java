@@ -138,7 +138,7 @@ public class LoginController implements Initializable {
 
             if(UserConnected != null){
 
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/InscriptionUser.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/MainCotainer.fxml"));
                 Parent root = loader.load();
 
 

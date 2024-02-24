@@ -99,9 +99,9 @@ public class EditController implements Initializable {
         //ByteArrayInputStream inputStream = new ByteArrayInputStream(user.getImage());
         File imageFile = new File(user.getImage());
         Image image = new Image(imageFile.toURI().toString());
-        // Image image = new Image(inputStream);
-        // pdp.setImage(image);
-        pdp.setImage(image);
+        //Image image = new Image(inputStream);
+         //pdp.setImage(image);
+        //pdp.setImage(image);
 
     }
 
@@ -117,7 +117,7 @@ public class EditController implements Initializable {
             if(!(LoginController.UserConnected.getRole().equals("Admin"))){
 
 
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/Login.fxml"));
                 Parent root = loader.load();
 
 
@@ -190,9 +190,7 @@ public class EditController implements Initializable {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/MainContainer.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root);
-            //Load CSS
-            String css = this.getClass().getResource("../assets/css/app.css").toExternalForm();
-            scene.getStylesheets().add(css);
+
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(scene);
             stage.show();

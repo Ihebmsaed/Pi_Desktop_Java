@@ -11,6 +11,9 @@ import java.nio.file.Files;
 import java.sql.SQLException;
 import java.util.Arrays;
 import java.util.ResourceBundle;
+
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -29,6 +32,8 @@ import javafx.scene.shape.Circle;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import services.UserService;
+
+import javax.management.relation.Role;
 
 
 public class UpdateController implements Initializable {
@@ -81,6 +86,15 @@ public class UpdateController implements Initializable {
         File imageFile = new File(user.getImage());
         Image image = new Image(imageFile.toURI().toString());
         pdp.setImage(image);
+        nom.setText(user.getNom());
+        prenom.setText(user.getPrenom());
+        email.setText(user.getEmail());
+        Tel.setText(String.valueOf(user.getTel()));
+
+
+
+        role.setValue(user.getRole());
+
 
 
     }
@@ -169,10 +183,10 @@ public class UpdateController implements Initializable {
     @FXML
     private void back(MouseEvent event) throws IOException {
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/InscriptionUser.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Edit.fxml"));
         Parent root = loader.load();
         EditController controller = loader.getController();
-        controller.senduser(user);
+        //controller.senduser(user);
 
         Scene scene = new Scene(root);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -181,5 +195,6 @@ public class UpdateController implements Initializable {
         stage.show();
 
     }
+
 
 }

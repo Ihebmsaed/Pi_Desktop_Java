@@ -10,7 +10,7 @@
 <AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AfficheUserController">
     <children>
 
-        <AnchorPane id="AnchorPane" layoutX="24.0" layoutY="-25.0" prefHeight="550.0" prefWidth="750.0" style="-fx-background-color: WHITE;">
+        <AnchorPane id="AnchorPane" layoutX="24.0" layoutY="-25.0" prefHeight="550.0" prefWidth="750.0" style="-fx-background-color: #ffffff;">
             <children>
                 <ScrollPane layoutX="67.0" layoutY="92.0" prefHeight="361.0" prefWidth="613.0">
                     <content>
@@ -30,17 +30,17 @@
                         </GridPane>
                     </content>
                 </ScrollPane>
-                <Button fx:id="retourbtn" layoutX="375.0" layoutY="477.0" mnemonicParsing="false" onAction="#retour" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: rgba(238,213,88,0.71); -fx-background-radius: 10;" text="Retour" textFill="WHITE">
+                <Button fx:id="retourbtn" layoutX="375.0" layoutY="477.0" mnemonicParsing="false" onAction="#retour" prefHeight="35.0" prefWidth="250.0" style="-fx-background-color: rgb(81,12,7); -fx-background-radius: 10;" text="Retour" textFill="WHITE">
                     <font>
                         <Font name="Verdana Bold" size="18.0" />
                     </font>
                 </Button>
-                <Button fx:id="ajouttbn" layoutX="87.0" layoutY="477.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: rgba(238,213,88,0.71); -fx-background-radius: 10;" text="Ajouter un Utilisateur" textFill="WHITE">
+                <Button fx:id="ajouttbn" layoutX="87.0" layoutY="477.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="35.0" prefWidth="250.0" style="-fx-background-color: rgb(81,12,7); -fx-background-radius: 10;" text="Ajouter un Utilisateur" textFill="WHITE">
                     <font>
                         <Font name="Verdana Bold" size="18.0" />
                     </font>
                 </Button>
-                <Text fill="#eecf07" layoutX="223.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Listes des Utilisateurs" textAlignment="CENTER" wrappingWidth="311.13671875">
+                <Text fill="#512300" layoutX="223.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Listes des Utilisateurs" textAlignment="CENTER" wrappingWidth="311.13671875">
                     <font>
                         <Font name="Verdana Bold" size="24.0" />
                     </font>
