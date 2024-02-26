@@ -1,0 +1,4 @@
+Controller\SousProduitController.class
+Controller\Home.class
+Controller\PanierGraphique.class
+Controller\CommandeGraphique.class
