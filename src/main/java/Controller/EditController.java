@@ -75,6 +75,7 @@ public class EditController implements Initializable {
 
 
 
+
             //Show ticket list
             FXMLLoader contentLoader = new FXMLLoader(getClass().getResource(""));
             AnchorPane content = contentLoader.load();
@@ -187,7 +188,7 @@ public class EditController implements Initializable {
     @FXML
     private void goBackHandler(MouseEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/MainContainer.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/MainCotainer.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root);
 

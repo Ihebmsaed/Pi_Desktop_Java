@@ -36,26 +36,26 @@ public class MainContainer implements Initializable {
             AnchorPane nbar = navbarLoader.load();
             navbarPane.getChildren().setAll(nbar);
             //Load sidebar & Landing Page
-            /*if (LoginController.UserConnected.getRole().equals("Admin")) {
-                FXMLLoader sidebarLoader = new FXMLLoader(getClass().getResource("SidebarAdmin.fxml"));
+            if (LoginController.UserConnected.getRole().equals("Artiste")) {
+                FXMLLoader sidebarLoader = new FXMLLoader(getClass().getResource("/SidebarAdmin.fxml"));
                 AnchorPane sbar = sidebarLoader.load();
                 sidebarPane.getChildren().setAll(sbar);
                 SidebarAdminController controller = sidebarLoader.getController();
                 //Load content
-                FXMLLoader contentLoader = new FXMLLoader(getClass().getResource("LandingPageAdmin.fxml"));
+                FXMLLoader contentLoader = new FXMLLoader(getClass().getResource("/LandingAdmin.fxml"));
                 AnchorPane content = contentLoader.load();
                 contentPane.getChildren().setAll(content);
             }
-            /*else {
-                FXMLLoader sidebarLoader = new FXMLLoader(getClass().getResource("Sidebar.fxml"));
+            else {
+                FXMLLoader sidebarLoader = new FXMLLoader(getClass().getResource("/Sidebar.fxml"));
                 AnchorPane sbar = sidebarLoader.load();
                 sidebarPane.getChildren().setAll(sbar);
-                SidebarController controller = sidebarLoader.getController();*/
+                SidebarController controller = sidebarLoader.getController();
                 //Load content
                 FXMLLoader contentLoader = new FXMLLoader(getClass().getResource("/LandingPage.fxml"));
                 AnchorPane content = contentLoader.load();
                 contentPane.getChildren().setAll(content);
-            /*}*/
+            }
 
             //Save an instance of the Main Container Controller to edit the Content Pane
             MCCSaver.setMCC(this);

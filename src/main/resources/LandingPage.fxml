@@ -14,7 +14,7 @@
             </font></Text>
         <ImageView fitHeight="373.0" fitWidth="574.0" layoutX="213.0" layoutY="124.0">
             <image>
-                <Image url="/images/aabb.jpg" />
+                <Image url="/images/505.jpg" />
             </image>
         </ImageView>
         <Text layoutX="153.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vous pouvez trouver une variété d'événements ici, obtenir des billets, acheter des produits d'artistes, tout en un !" wrappingWidth="743.67236328125">

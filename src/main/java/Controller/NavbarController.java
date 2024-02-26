@@ -62,7 +62,7 @@ public class NavbarController implements Initializable {
     @FXML
     private void openPanier(MouseEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Login.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(""));
             Parent root = loader.load();
             welcomeText.getScene().setRoot(root);
         } catch (IOException ex) {

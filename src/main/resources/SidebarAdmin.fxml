@@ -6,55 +6,54 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="223.0" style="-fx-background-color: rgba(238,213,88,0.71);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SidebarAdminController">
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="223.0" style="-fx-background-color: #f8eef1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SidebarAdminController">
     <children>
-        <Button fx:id="homeBtn" layoutX="1.0" layoutY="202.0" mnemonicParsing="false" onAction="#homePage" prefHeight="40.0" prefWidth="223.0" styleClass="GeneralButton2" text="Home" textFill="#000000">
+        <Button fx:id="homeBtn" layoutX="1.0" layoutY="202.0" mnemonicParsing="false" onAction="#homePage" prefHeight="40.0" prefWidth="223.0" styleClass="GeneralButton2" text="Home" textFill="WHITE">
             <font>
                 <Font name="Leelawadee UI" size="17.0" />
             </font></Button>
-        <AnchorPane prefHeight="202.0" prefWidth="223.0" style="-fx-background-color: rgba(238,213,88,0.71);">
+        <AnchorPane prefHeight="202.0" prefWidth="223.0" style="-fx-background-color: #f6e5ec;">
             <children>
                 <ImageView fitHeight="166.0" fitWidth="200.0" layoutX="12.0" layoutY="18.0">
                     <image>
-                        <Image url="" />
+                        <Image url="/images/logooo-removebg-preview.png" />
                     </image>
                 </ImageView>
             </children>
         </AnchorPane>
-        <Button fx:id="eventListBtn" layoutX="1.0" layoutY="242.0" mnemonicParsing="false"  prefHeight="40.0" prefWidth="223.0" styleClass="GeneralButton2" text="Événements" textFill="#000000">
+        <Button fx:id="eventListBtn" layoutX="1.0" layoutY="242.0" mnemonicParsing="false" onAction="#eventListPage" prefHeight="40.0" prefWidth="223.0" styleClass="GeneralButton2" text="Événements" textFill="WHITE">
             <font>
                 <Font size="17.0" />
             </font></Button>
-        <Button fx:id="produitsBtn" layoutX="1.0" layoutY="322.0" mnemonicParsing="false"  prefHeight="40.0" prefWidth="223.0" styleClass="GeneralButton2" text="Produits" textFill="#000000">
+        <Button fx:id="produitsBtn" layoutX="1.0" layoutY="322.0" mnemonicParsing="false" onAction="#produitsPage" prefHeight="40.0" prefWidth="223.0" styleClass="GeneralButton2" text="Produits" textFill="WHITE">
             <font>
                 <Font name="Leelawadee UI" size="17.0" />
             </font>
         </Button>
-        <Button fx:id="reclamationsBtn" layoutX="1.0" layoutY="362.0" mnemonicParsing="false"  prefHeight="40.0" prefWidth="223.0" styleClass="GeneralButton2" text="Réclamations" textFill="#000000">
+        <Button fx:id="reclamationsBtn" layoutX="1.0" layoutY="362.0" mnemonicParsing="false" onAction="#reclamationPage" prefHeight="40.0" prefWidth="223.0" styleClass="GeneralButton2" text="Réclamations" textFill="WHITE">
             <font>
                 <Font name="Leelawadee UI" size="17.0" />
             </font>
         </Button>
-        <Button fx:id="commandeBtn" layoutX="1.0" layoutY="402.0" mnemonicParsing="false"  prefHeight="40.0" prefWidth="223.0" styleClass="GeneralButton2" text="Commande" textFill="#000000">
+        <Button fx:id="commandeBtn" layoutX="1.0" layoutY="402.0" mnemonicParsing="false" onAction="#commandePage" prefHeight="40.0" prefWidth="223.0" styleClass="GeneralButton2" text="Commande" textFill="WHITE">
             <font>
                 <Font name="Leelawadee UI" size="17.0" />
             </font>
         </Button>
-        <Button fx:id="LocationBtn" layoutX="1.0" layoutY="442.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="223.0" styleClass="GeneralButton2" text="Location" textFill="#000000">
+        <Button fx:id="LocationBtn" layoutX="1.0" layoutY="442.0" mnemonicParsing="false" onAction="#locationPage" prefHeight="40.0" prefWidth="223.0" styleClass="GeneralButton2" text="Location" textFill="WHITE">
             <font>
                 <Font name="Leelawadee UI" size="17.0" />
             </font>
         </Button>
-        <Button fx:id="utilisateursBtn" layoutX="1.0" layoutY="482.0" mnemonicParsing="false"  prefHeight="40.0" prefWidth="223.0" styleClass="GeneralButton2" text="Utilisateurs" textFill="#000000">
+        <Button fx:id="utilisateursBtn" layoutX="1.0" layoutY="482.0" mnemonicParsing="false" onAction="#utilisateursPage" prefHeight="40.0" prefWidth="223.0" styleClass="GeneralButton2" text="Utilisateurs" textFill="WHITE">
             <font>
                 <Font name="Leelawadee UI" size="17.0" />
             </font>
         </Button>
-        <Button fx:id="ticketsBtn" layoutX="1.0" layoutY="282.0" mnemonicParsing="false"  prefHeight="40.0" prefWidth="223.0" styleClass="GeneralButton2" text="Tickets" textFill="#000000">
+        <Button fx:id="ticketsBtn" layoutX="1.0" layoutY="282.0" mnemonicParsing="false" onAction="#ticketsPage" prefHeight="40.0" prefWidth="223.0" styleClass="GeneralButton2" text="Tickets" textFill="WHITE">
             <font>
                 <Font size="17.0" />
             </font>
         </Button>
     </children>
 </AnchorPane>
-

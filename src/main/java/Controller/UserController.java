@@ -36,7 +36,7 @@ public class UserController implements Initializable {
     private User u;
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+
 
         Circle clip = new Circle();
         clip.setCenterX(pdp.getFitWidth() / 2);

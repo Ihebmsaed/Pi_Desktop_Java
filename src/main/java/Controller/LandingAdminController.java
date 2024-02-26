@@ -6,8 +6,7 @@ import java.util.ResourceBundle;
 import javafx.fxml.Initializable;
 
 
-public class LandingPageController implements Initializable {
-
+public class LandingAdminController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {

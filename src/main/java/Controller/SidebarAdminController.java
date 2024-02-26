@@ -29,7 +29,7 @@ public class SidebarAdminController implements Initializable {
 
     @FXML
     private Button eventListBtn;
-   // private MainContainerController mcc;
+    private MainContainer mcc;
     @FXML
     private Button homeBtn;
     @FXML
@@ -57,10 +57,10 @@ public class SidebarAdminController implements Initializable {
 
 
 
-    /*@FXML
+    @FXML
     private void eventListPage(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/AfficherUser.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/AfficherListeEvent.fxml"));
             Parent root = loader.load();
             MCCSaver.mcc.setContent(root);
             AfficheUserController controller = loader.getController();
@@ -68,24 +68,24 @@ public class SidebarAdminController implements Initializable {
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
-    }*/
+    }
 
     @FXML
     private void homePage(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/LandingPage.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/LandingPageAdmin.fxml"));
             Parent root = loader.load();
             MCCSaver.mcc.setContent(root);
-            LandingPageController controller = loader.getController();
+            LandingAdminController controller = loader.getController();
 
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
-    }}
+    }
 
-    /*@FXML
+    @FXML
     private void produitsPage(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("gere.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/gere.fxml"));
         Parent root = loader.load();
 
         // Set the root of the current scene to the new FXML file
@@ -94,7 +94,7 @@ public class SidebarAdminController implements Initializable {
 
     @FXML
     private void reclamationPage(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("AdminRecPanel.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/AdminRecPanel.fxml"));
         Parent root = loader.load();
 
         // Set the root of the current scene to the new FXML file
@@ -103,7 +103,7 @@ public class SidebarAdminController implements Initializable {
 
     @FXML
     private void commandePage(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("AdminCommande.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/AdminCommande.fxml"));
         Parent root = loader.load();
 
         // Set the root of the current scene to the new FXML file
@@ -113,7 +113,7 @@ public class SidebarAdminController implements Initializable {
     @FXML
     private void locationPage(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("GESTIONLOCAUX.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/GESTIONLOCAUX.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root);
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -127,7 +127,7 @@ public class SidebarAdminController implements Initializable {
     @FXML
     private void utilisateursPage(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("AfficheUser.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/AfficherUser.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root);
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -141,14 +141,14 @@ public class SidebarAdminController implements Initializable {
     @FXML
     private void ticketsPage(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("TicketList.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/TicketList.fxml"));
             Parent root = loader.load();
             MCCSaver.mcc.setContent(root);
-            TicketListController controller = loader.getController();
+            AfficheUserController controller = loader.getController();
 
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
-    }*/
+    }
 
-
+}
