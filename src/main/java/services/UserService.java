@@ -8,18 +8,67 @@ import java.util.stream.Collectors;
 
 import interfaces.IService;
 
+
 import tools.Myconnection;
 
 public class UserService implements IService<User> {
 
-    Connection cnx;
+    static Connection cnx;
+    private static int id;
+    private static String nom;
+    private static String email;
+    private static String prenom;
+    private static String mdp;
+    private static String image;
+    private static int tel;
+
 
     public UserService() {
         cnx = Myconnection.getInstance().getCnx();
     }
 
+
+
+   /* public static String login(User t) {
+        String message = "";
+        try {
+            if (!t.getEmail().equals("") && !t.getMdp().equals("")) {
+                String req = "SELECT * FROM user WHERE email = ?";
+                PreparedStatement pst = cnx.prepareStatement(req);
+                pst.setString(1, t.getEmail());
+                ResultSet rs = pst.executeQuery();
+                if (rs.next()) {
+
+                    if (BCrypt.checkpw(t.getMdp(), rs.getString("mdp"))) {
+
+                        id = rs.getInt("id");
+                        nom = rs.getString("nom");
+                        prenom = rs.getString("prenom");
+                        email = rs.getString("email");
+                        tel = rs.getInt("tel");
+                        image = rs.getString("image");
+                        System.out.println(" Salut :" + nom);
+
+                    } else {
+                        return message = "Mot de passe incorrect.";
+                    }
+                } else {
+                    return message = "Email non trouvé.";
+                }
+            } else {
+                return message = "Champs vide.";
+            }
+        } catch (SQLException e) {
+            System.err.println(e.getMessage());
+        }
+        return message;
+    }*/
+
+
+
     @Override
     public void ajouter(User t) throws SQLException {
+
 
         String req = "INSERT INTO user (nom,prenom,email,mdp,tel,image,role) VALUES(?,?,?,?,?,?,?)";
         //String req = "INSERT INTO yyy (nom,prenom) VALUES(?,?)";
@@ -201,7 +250,13 @@ public class UserService implements IService<User> {
         }
 
 
-    }
+
+
+
+
+
+
+}
 
 
 

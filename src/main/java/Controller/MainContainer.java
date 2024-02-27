@@ -36,7 +36,7 @@ public class MainContainer implements Initializable {
             AnchorPane nbar = navbarLoader.load();
             navbarPane.getChildren().setAll(nbar);
             //Load sidebar & Landing Page
-            if (LoginController.UserConnected.getRole().equals("Artiste")) {
+            if (LoginController.UserConnected.getRole().equals("Admin")) {
                 FXMLLoader sidebarLoader = new FXMLLoader(getClass().getResource("/SidebarAdmin.fxml"));
                 AnchorPane sbar = sidebarLoader.load();
                 sidebarPane.getChildren().setAll(sbar);
@@ -74,3 +74,5 @@ public class MainContainer implements Initializable {
     }
 
 }
+
+

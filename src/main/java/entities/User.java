@@ -27,6 +27,17 @@ public class User {
         this.role = role;
         this.image = image;
     }
+
+    public User(int id, int tel, String nom, String prenom, String email, String mdp, String image) {
+        this.id = id;
+        this.tel = tel;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.email = email;
+        this.mdp = mdp;
+        this.image = image;
+    }
+
     public User(String nom, String prenom) {
 
         this.nom = nom;

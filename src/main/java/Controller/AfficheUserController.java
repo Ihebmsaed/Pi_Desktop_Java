@@ -119,7 +119,7 @@ public class AfficheUserController implements Initializable {
     @FXML
     private void retour(ActionEvent event) throws IOException {
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Login.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/MainCotainer.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -163,10 +163,10 @@ public class AfficheUserController implements Initializable {
 
     }
 
-    /*@FXML
+    @FXML
     private void stats(ActionEvent event) throws IOException {
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("StatUser.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/StatUser.fxml"));
         Parent root = loader.load();
 
 
@@ -178,7 +178,7 @@ public class AfficheUserController implements Initializable {
 
 
 
-    }*/
+    }
 
 
 

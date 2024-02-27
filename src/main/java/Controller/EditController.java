@@ -60,9 +60,7 @@ public class EditController implements Initializable {
     @FXML
     private AnchorPane ticketListPane;
 
-    /**
-     * Initializes the controller class.
-     */
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
 
@@ -101,7 +99,7 @@ public class EditController implements Initializable {
         File imageFile = new File(user.getImage());
         Image image = new Image(imageFile.toURI().toString());
         //Image image = new Image(inputStream);
-         //pdp.setImage(image);
+        //pdp.setImage(image);
         //pdp.setImage(image);
 
     }

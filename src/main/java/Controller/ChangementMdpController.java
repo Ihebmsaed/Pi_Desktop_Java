@@ -31,12 +31,10 @@ public class ChangementMdpController implements Initializable {
     String email2;
     UserService us=new UserService();
 
-    /**
-     * Initializes the controller class.
-     */
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+
     }
 
     public void updateMdp(String email){

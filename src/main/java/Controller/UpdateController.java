@@ -186,7 +186,7 @@ public class UpdateController implements Initializable {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/Edit.fxml"));
         Parent root = loader.load();
         EditController controller = loader.getController();
-        //controller.senduser(user);
+        controller.senduser(user);
 
         Scene scene = new Scene(root);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

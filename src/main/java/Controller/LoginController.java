@@ -32,6 +32,7 @@ import javafx.util.Duration;
 import services.UserService;
 
 
+
 public class LoginController implements Initializable {
 
     @FXML
@@ -46,7 +47,7 @@ public class LoginController implements Initializable {
 
 
     public static User UserConnected;
-    UserService us= new UserService();
+    UserService us = new UserService();
     @FXML
     private Button icibt;
     @FXML
@@ -73,8 +74,6 @@ public class LoginController implements Initializable {
         translateTransition.setToX(logo.getBoundsInParent().getWidth());
         translateTransition.setCycleCount(Timeline.INDEFINITE);
         translateTransition.play();*/
-
-
 
 
     }
@@ -155,7 +154,7 @@ public class LoginController implements Initializable {
             }
         }
 
-    }
+}
 
 
 

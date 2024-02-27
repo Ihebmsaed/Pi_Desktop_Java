@@ -7,6 +7,8 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
 <AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AfficheUserController">
     <children>
 
@@ -40,7 +42,7 @@
                         <Font name="Verdana Bold" size="18.0" />
                     </font>
                 </Button>
-                <Text fill="#512300" layoutX="223.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Listes des Utilisateurs" textAlignment="CENTER" wrappingWidth="311.13671875">
+                <Text fill="#000000" layoutX="223.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Listes des Utilisateurs" textAlignment="CENTER" wrappingWidth="311.13671875">
                     <font>
                         <Font name="Verdana Bold" size="24.0" />
                     </font>
@@ -53,6 +55,12 @@
                             </color>
                         </InnerShadow>
                     </effect></TextField>
+                <Button fx:id="stat" layoutX="26.0" layoutY="34.0" mnemonicParsing="false" onAction="#stats" prefHeight="49.0" prefWidth="70.0"  />
+                <ImageView fitHeight="36.0" fitWidth="45.0" layoutX="38.0" layoutY="42.0">
+                    <image>
+                        <Image url="/images/stat.png" />
+                    </image>
+                </ImageView>
 
             </children>
         </AnchorPane>

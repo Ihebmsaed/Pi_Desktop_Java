@@ -13,12 +13,10 @@ public class CodeMdpController implements Initializable {
     @FXML
     private TextField code;
 
-    /**
-     * Initializes the controller class.
-     */
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+
     }
 
 

@@ -5,10 +5,7 @@
 
 package Controller;
 
-/**
- *
- * @author Aymen
- */
+
 public class MCCSaver {
     public static MainContainer mcc;
 

@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
- */
+
 package Controller;
 
 import java.io.IOException;
@@ -30,14 +27,12 @@ public class NavbarController implements Initializable {
     @FXML
     private ImageView panierIcon;
 
-    /**
-     * Initializes the controller class.
-     */
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         String name = LoginController.UserConnected.getNom();
         welcomeText.setText("Welcome, "+name+"!");
-        if(LoginController.UserConnected.getRole().equals("Artiste")){
+        if(LoginController.UserConnected.getRole().equals("Admin")){
             profileIcon.setVisible(false);
             panierIcon.setVisible(false);
         }
@@ -72,3 +67,5 @@ public class NavbarController implements Initializable {
 
 
 }
+
+

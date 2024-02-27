@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
- */
+
 package Controller;
 
 import java.io.IOException;
@@ -20,11 +17,7 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-/**
- * FXML Controller class
- *
- * @author Aymen
- */
+
 public class SidebarAdminController implements Initializable {
 
     @FXML
@@ -44,9 +37,7 @@ public class SidebarAdminController implements Initializable {
     private Button utilisateursBtn;
     @FXML
     private Button ticketsBtn;
-    /**
-     * Initializes the controller class.
-     */
+
 
 
     @Override
@@ -60,7 +51,7 @@ public class SidebarAdminController implements Initializable {
     @FXML
     private void eventListPage(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/AfficherListeEvent.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(""));
             Parent root = loader.load();
             MCCSaver.mcc.setContent(root);
             AfficheUserController controller = loader.getController();
@@ -85,7 +76,7 @@ public class SidebarAdminController implements Initializable {
 
     @FXML
     private void produitsPage(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/gere.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(""));
         Parent root = loader.load();
 
         // Set the root of the current scene to the new FXML file
@@ -94,7 +85,7 @@ public class SidebarAdminController implements Initializable {
 
     @FXML
     private void reclamationPage(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/AdminRecPanel.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(""));
         Parent root = loader.load();
 
         // Set the root of the current scene to the new FXML file
@@ -103,7 +94,7 @@ public class SidebarAdminController implements Initializable {
 
     @FXML
     private void commandePage(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/AdminCommande.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(""));
         Parent root = loader.load();
 
         // Set the root of the current scene to the new FXML file
@@ -113,7 +104,7 @@ public class SidebarAdminController implements Initializable {
     @FXML
     private void locationPage(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/GESTIONLOCAUX.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(""));
             Parent root = loader.load();
             Scene scene = new Scene(root);
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -141,7 +132,7 @@ public class SidebarAdminController implements Initializable {
     @FXML
     private void ticketsPage(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/TicketList.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(""));
             Parent root = loader.load();
             MCCSaver.mcc.setContent(root);
             AfficheUserController controller = loader.getController();

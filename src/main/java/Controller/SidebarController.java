@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
- */
+
 package Controller;
 
 import java.io.IOException;
@@ -20,11 +17,7 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-/**
- * FXML Controller class
- *
- * @author Aymen
- */
+
 public class SidebarController implements Initializable {
 
     @FXML
@@ -38,9 +31,6 @@ public class SidebarController implements Initializable {
     private Button reclamationsBtn;
     @FXML
     private Button locauxBtn;
-    /**
-     * Initializes the controller class.
-     */
 
 
     @Override
@@ -79,7 +69,7 @@ public class SidebarController implements Initializable {
 
     @FXML
     private void produitsPage(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("AfficherProduit.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(""));
         Parent root = loader.load();
 
         // Set the root of the current scene to the new FXML file
@@ -89,7 +79,7 @@ public class SidebarController implements Initializable {
 
     @FXML
     private void reclamationPage(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("ChoisirReclamationType.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(""));
         Parent root = loader.load();
 
         // Set the root of the current scene to the new FXML file
@@ -99,7 +89,7 @@ public class SidebarController implements Initializable {
     @FXML
     private void locauxPage(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("interfaceU.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(""));
             Parent root = loader.load();
             Scene scene = new Scene(root);
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

@@ -40,9 +40,7 @@ public class StatUserController implements Initializable {
     Connection cnx;
     @FXML
     private ImageView goBackBtn;
-    /**
-     * Initializes the controller class.
-     */
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         XYChart.Series<String, Integer> artisteSeries = new XYChart.Series<>();
@@ -108,7 +106,7 @@ public class StatUserController implements Initializable {
     @FXML
     private void goBackHandler(MouseEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("AfficheUser.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/AfficherUser.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root);
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
