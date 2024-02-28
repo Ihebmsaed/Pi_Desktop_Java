@@ -69,7 +69,26 @@ public class EditController implements Initializable {
         try {
 
 
+            if (LoginController.UserConnected.getRole().equals("Admin")){
 
+                backbtn.setVisible(true);
+
+            }
+            if (LoginController.UserConnected.getRole().equals("Admin")){
+
+                goBackBtn.setVisible(false);
+
+            }
+            if (LoginController.UserConnected.getRole().equals("Admin")){
+
+                delb.setVisible(false);
+
+            }
+            if (LoginController.UserConnected.getRole().equals("Admin")){
+
+                modb.setVisible(false);
+
+            }
 
 
 
@@ -163,7 +182,7 @@ public class EditController implements Initializable {
     private void back(MouseEvent event) throws IOException {
 
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Login.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/AfficherUser.fxml"));
         Parent root = loader.load();
 
 
