@@ -20,11 +20,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import services.UserService;
 
-/**
- * FXML Controller class
- *
- * @author Mohamed
- */
+
 public class ChangementMdpController implements Initializable {
 
     @FXML
@@ -38,12 +34,10 @@ public class ChangementMdpController implements Initializable {
     public String key = "ThisIsASecretKey";
     UserService us=new UserService();
 
-    /**
-     * Initializes the controller class.
-     */
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+
     }
 
     public void updateMdp(String email){
