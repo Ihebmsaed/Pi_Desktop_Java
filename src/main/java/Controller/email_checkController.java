@@ -1,4 +1,3 @@
-
 package Controller;
 
 import entities.mail;
@@ -39,9 +38,7 @@ public class email_checkController implements Initializable {
     private Button valcodebtn;
     int code2;
     String email_set;
-    /**
-     * Initializes the controller class.
-     */
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
@@ -56,7 +53,7 @@ public class email_checkController implements Initializable {
             code2 = rand.nextInt(9000) + 1000;
             mail m = new mail();
 
-            mail.send(email_check.getText(), "code de vérification", "le code est: "+String.valueOf(code2), "", "");
+            mail.send(email_check.getText(), "code de vérification", "le code est: "+String.valueOf(code2), "ihebmsaed41@gmail.com", "vzgk toyl cvue devy");
 
             email_check.setVisible(false);
             valbtn.setVisible(false);
@@ -86,7 +83,7 @@ public class email_checkController implements Initializable {
 
 
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Login.fxml"));
         Parent root = loader.load();
 
 
@@ -109,7 +106,7 @@ public class email_checkController implements Initializable {
         if(code2==Integer.parseInt(code.getText())){
 
 
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("ChangementMdp.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/CangementMdp.fxml"));
             Parent root = loader.load();
             ChangementMdpController controller=loader.getController();
             controller.updateMdp(email_set);

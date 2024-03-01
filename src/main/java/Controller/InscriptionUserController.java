@@ -1,6 +1,8 @@
 
 package Controller;
 
+import entities.AESCrypt;
+import entities.SMSsender;
 import entities.User;
 import java.io.File;
 import java.io.IOException;
@@ -54,6 +56,9 @@ public class InscriptionUserController implements Initializable {
     private Text iscriL;
     @FXML
     private Button ret;
+
+    public AESCrypt CryptVar;
+    public String key = "ThisIsASecretKey";
 
 
 
@@ -120,15 +125,20 @@ public class InscriptionUserController implements Initializable {
 
 
                 User p = new User();
+                String encrypted = CryptVar.encrypt(mdptf.getText(), key);
                 p.setNom(nomtf.getText());
                 p.setPrenom(prenomtf.getText());
                 p.setTel(Integer.parseInt(teltf.getText()));
                 p.setRole(choices.getValue());
                 p.setEmail(emailtf.getText());
-                p.setMdp(mdptf.getText());
+                p.setMdp(encrypted);
                 p.setImage(imageData);
                 us.ajouter(p);
+// Récupérer le numéro de téléphone de TelField
+                String tel1 = teltf.getText();
 
+                // Appeler la méthode SMSSender de SmsSender avec le numéro de téléphone récupéré
+                SMSsender.sendSMS(tel1, "Bienvenue ! Votre inscription est réussie.");
 
 
                 Alert alert = new Alert(AlertType.INFORMATION);
@@ -140,6 +150,8 @@ public class InscriptionUserController implements Initializable {
 
             catch (SQLException ex) {
                 System.out.println("error" + ex.getMessage());
+            } catch (Exception e) {
+                throw new RuntimeException(e);
             }
 
         }

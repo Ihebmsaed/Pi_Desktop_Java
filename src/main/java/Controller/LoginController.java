@@ -1,6 +1,7 @@
 
 package Controller;
 
+import entities.AESCrypt;
 import entities.User;
 import java.io.IOException;
 import java.net.URL;
@@ -57,6 +58,9 @@ public class LoginController implements Initializable {
     @FXML
     private Text bien;
 
+    public AESCrypt CryptVar;
+    public String key = "ThisIsASecretKey";
+
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -79,7 +83,7 @@ public class LoginController implements Initializable {
     }
 
     @FXML
-    private void connect(ActionEvent event) throws SQLException, IOException {
+    private void connect(ActionEvent event) throws Exception {
 
         if (email.getText().isEmpty()||mdp.getText().isEmpty()){
 
@@ -105,7 +109,7 @@ public class LoginController implements Initializable {
 
             for (int i = 0; i < users.size(); i++){
 
-                if (users.get(i).getEmail().equals(email.getText()) && users.get(i).getMdp().equals(mdp.getText()))
+                if (users.get(i).getEmail().equals(email.getText()) && users.get(i).getMdp().equals(CryptVar.encrypt(mdp.getText(),key)))
                 {
                     UserConnected=users.get(i);
                     verif=true;

@@ -66,6 +66,21 @@ public class NavbarController implements Initializable {
     }
 
 
-}
+    public void Logout(MouseEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Login.fxml"));
+            Parent root = loader.load();
+            //EditController controller = loader.getController();
+            //controller.senduser(LoginController.UserConnected);
+            Scene scene = new Scene(root);
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
+    }
+
 
 

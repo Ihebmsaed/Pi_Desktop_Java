@@ -218,6 +218,31 @@ public class UserService implements IService<User> {
         }
         return nom;
     }
+    // Method to add verification code to the database
+    public void addVerificationCode(String email, String verificationCode) throws SQLException {
+        String query = "UPDATE user SET verification_code = ? WHERE email = ?";
+        PreparedStatement ps = cnx.prepareStatement(query);
+        ps.setString(1, verificationCode);
+        ps.setString(2, email);
+        int result = ps.executeUpdate();
+        if (result > 0) {
+            System.out.println("Verification code added to the database for email: " + email);
+        } else {
+            System.out.println("Failed to add verification code to the database for email: " + email);
+        }
+    }
+
+    public String getVerificationCode(String email) throws SQLException {
+        String verificationCode = null;
+        String query = "SELECT verification_code FROM user WHERE email = ?";
+        PreparedStatement ps = cnx.prepareStatement(query);
+        ps.setString(1, email);
+        ResultSet rs = ps.executeQuery();
+        if (rs.next()) {
+            verificationCode = rs.getString("verification_code");
+        }
+        return verificationCode;
+    }
 
 
 

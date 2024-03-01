@@ -11,7 +11,7 @@
 <AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.email_checkController">
     <children>
         <TextField fx:id="email_check" alignment="CENTER" layoutX="169.0" layoutY="69.0" promptText="votre email" />
-        <Button fx:id="valbtn" layoutX="191.0" layoutY="138.0" mnemonicParsing="false" onAction="#passwrd_reset" text="valider email" />
+        <Button fx:id="valbtn" layoutX="191.0" layoutY="138.0" mnemonicParsing="false" onAction="#passwrd_reset"  text="valider email" />
         <ImageView fx:id="goback" fitHeight="50.0" fitWidth="44.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#retour_login">
             <image>
                 <Image url="/images/retour-removebg-preview.png" />
@@ -28,6 +28,6 @@
             </font>
         </Text>
         <TextField fx:id="code" alignment="CENTER" layoutX="169.0" layoutY="101.0" promptText="code" visible="false" />
-        <Button fx:id="valcodebtn" layoutX="192.0" layoutY="194.0" mnemonicParsing="false" onAction="#verif_code"  text="valider code" visible="false" />
+        <Button fx:id="valcodebtn" layoutX="192.0" layoutY="194.0" mnemonicParsing="false" onAction="#verif_code" text="valider code" visible="false" />
     </children>
 </AnchorPane>

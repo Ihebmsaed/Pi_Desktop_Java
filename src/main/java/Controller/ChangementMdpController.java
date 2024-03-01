@@ -1,10 +1,11 @@
-
 package Controller;
 
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
+
+import entities.AESCrypt;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -19,7 +20,11 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import services.UserService;
 
-
+/**
+ * FXML Controller class
+ *
+ * @author Mohamed
+ */
 public class ChangementMdpController implements Initializable {
 
     @FXML
@@ -29,12 +34,16 @@ public class ChangementMdpController implements Initializable {
     @FXML
     private PasswordField mdp2;
     String email2;
+    public AESCrypt CryptVar;
+    public String key = "ThisIsASecretKey";
     UserService us=new UserService();
 
-
+    /**
+     * Initializes the controller class.
+     */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-
+        // TODO
     }
 
     public void updateMdp(String email){
@@ -43,9 +52,10 @@ public class ChangementMdpController implements Initializable {
     }
 
     @FXML
-    private void Update_password(ActionEvent event) throws SQLException, IOException {
+    private void Update_password(ActionEvent event) throws Exception {
         if(mdp1.getText().equals(mdp2.getText())){
-            // us.ModifMDP(email2, mdp1.getText());
+             us.ModifMDP(email2, CryptVar.encrypt(mdp1.getText(),key));
+
 
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("mot de passe");
@@ -89,4 +99,3 @@ public class ChangementMdpController implements Initializable {
 
 
 }
-
