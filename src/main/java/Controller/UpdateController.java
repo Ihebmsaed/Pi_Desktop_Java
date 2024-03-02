@@ -123,9 +123,9 @@ public class UpdateController implements Initializable {
 
         }
 
-        if (!mdp.getText().isEmpty()) {
-            user.setMdp(mdp.getText());
-        }
+       // if (!mdp.getText().isEmpty()) {
+         //   user.setMdp(mdp.getText());
+        //}
 
         if (role.getValue() != null) {
             user.setRole(role.getValue());

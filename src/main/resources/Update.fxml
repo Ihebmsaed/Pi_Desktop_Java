@@ -19,8 +19,8 @@
         <TextField fx:id="prenom" layoutX="76.0" layoutY="125.0" prefHeight="34.0" prefWidth="217.0" promptText="prenom" />
         <TextField fx:id="email" layoutX="76.0" layoutY="177.0" prefHeight="34.0" prefWidth="217.0" promptText="email" />
         <TextField fx:id="Tel" layoutX="76.0" layoutY="232.0" prefHeight="34.0" prefWidth="217.0" promptText="Tel" />
-        <TextField fx:id="mdp" layoutX="76.0" layoutY="283.0" prefHeight="34.0" prefWidth="217.0" promptText="mot de passe" />
-        <ChoiceBox fx:id="role" layoutX="76.0" layoutY="342.0" prefHeight="34.0" prefWidth="217.0" style="-fx-background-color: #ffffff;"  />
+
+        <ChoiceBox fx:id="role" layoutX="76.0" layoutY="283.0" prefHeight="34.0" prefWidth="217.0" style="-fx-background-color: #ffffff;"  />
 
         <Button fx:id="modb" layoutX="406.0" layoutY="245.0" mnemonicParsing="false" onAction="#modifier" prefHeight="46.0" prefWidth="171.0" style="-fx-background-color: #510c07; -fx-background-radius: 10;" text="Modifier" textFill="#ffffff">
             <font>
@@ -30,7 +30,7 @@
             <font>
                 <Font name="Verdana Bold" size="24.0" />
             </font></Button>
-        <Button fx:id="upbtn" layoutX="76.0" layoutY="402.0" mnemonicParsing="false" onAction="#uploadImgBtn" prefHeight="34.0" prefWidth="217.0" style="-fx-background-color: #510c07;" text="Upload" textFill="#fffefe">
+        <Button fx:id="upbtn" layoutX="76.0" layoutY="342.0" mnemonicParsing="false" onAction="#uploadImgBtn" prefHeight="34.0" prefWidth="217.0" style="-fx-background-color: #510c07;" text="Upload" textFill="#fffefe">
             <font>
                 <Font name="Verdana Bold" size="15.0" />
             </font>
