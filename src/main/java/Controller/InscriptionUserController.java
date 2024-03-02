@@ -212,7 +212,7 @@ public class InscriptionUserController implements Initializable {
 //
         Scene scene = new Scene(root);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setTitle("Affiche Users");
+        stage.setTitle("Login");
         stage.setScene(scene);
         stage.show();
 //

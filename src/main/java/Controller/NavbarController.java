@@ -26,6 +26,7 @@ public class NavbarController implements Initializable {
     private ImageView profileIcon;
     @FXML
     private ImageView panierIcon;
+    //private ImageView out;
 
 
     @Override
@@ -34,7 +35,8 @@ public class NavbarController implements Initializable {
         welcomeText.setText("Welcome, "+name+"!");
         if(LoginController.UserConnected.getRole().equals("Admin")){
             profileIcon.setVisible(false);
-            panierIcon.setVisible(false);
+            //panierIcon.setVisible(false);
+            //out.setVisible(true);
         }
     }
 

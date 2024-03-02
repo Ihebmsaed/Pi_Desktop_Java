@@ -167,7 +167,7 @@ public class EditController implements Initializable {
 
         Scene scene = new Scene(root);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setTitle("Profile");
+        stage.setTitle("Update");
         stage.setScene(scene);
         stage.show();
 

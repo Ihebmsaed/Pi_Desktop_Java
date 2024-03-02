@@ -45,12 +45,12 @@
                 <Font name="Leelawadee UI" size="17.0" />
             </font>
         </Button>
-        <Button fx:id="utilisateursBtn" layoutX="1.0" layoutY="482.0" mnemonicParsing="false" onAction="#utilisateursPage" prefHeight="40.0" prefWidth="223.0" styleClass="GeneralButton2" text="Utilisateurs" textFill="WHITE">
+        <Button fx:id="utilisateursBtn" layoutX="1.0" layoutY="482.0" mnemonicParsing="false" onAction="#utilisateursPage" prefHeight="40.0" prefWidth="223.0" styleClass="GeneralButton2" text="Utilisateurs" textFill="#000000">
             <font>
                 <Font name="Leelawadee UI" size="17.0" />
             </font>
         </Button>
-        <Button fx:id="ticketsBtn" layoutX="1.0" layoutY="282.0" mnemonicParsing="false" onAction="#ticketsPage" prefHeight="40.0" prefWidth="223.0" styleClass="GeneralButton2" text="Tickets" textFill="WHITE">
+        <Button fx:id="ticketsBtn" layoutX="1.0" layoutY="282.0" mnemonicParsing="false" onAction="#ticketsPage" prefHeight="40.0" prefWidth="223.0" styleClass="GeneralButton2" text="Tickets" textFill="#000000">
             <font>
                 <Font size="17.0" />
             </font>

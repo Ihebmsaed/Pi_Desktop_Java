@@ -6,7 +6,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="76.0" prefWidth="1057.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.NavbarController">
     <children>
-        <ImageView fx:id="profileIcon" fitHeight="52.0" fitWidth="53.0" layoutX="970.0" layoutY="12.0" onMouseClicked="#Logout">
+        <ImageView fx:id="out" fitHeight="52.0" fitWidth="53.0" layoutX="970.0" layoutY="12.0" onMouseClicked="#Logout">
             <image>
                 <Image url="/images/logout-removebg-preview.png" />
             </image>
@@ -22,7 +22,7 @@
                 <Image url="/images/pan.png" />
             </image>
         </ImageView>
-        <ImageView fx:id="out" fitHeight="52.0" fitWidth="53.0" layoutX="900.0" layoutY="12.0" onMouseClicked="#openProfile">
+        <ImageView fx:id="profileIcon" fitHeight="52.0" fitWidth="53.0" layoutX="900.0" layoutY="12.0" onMouseClicked="#openProfile">
             <image>
                 <Image url="/images/1313-removebg-preview.png" />
             </image>
