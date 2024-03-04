@@ -1,0 +1,84 @@
+#anchore {
+    -fx-background-color: rgb(210, 139, 115);
+}
+.scroll-pane .content {
+    -fx-padding: 30px; /* Espacement interne */
+}
+
+/* Style pour le ScrollPane */
+.scroll-pane {
+    -fx-background-color: #f89a86; /* Couleur de fond */
+    -fx-border-color: #fc0101; /* Couleur de la bordure */
+    -fx-border-width: 1px; /* Largeur de la bordure */
+    -fx-border-radius: 5px; /* Rayon des coins de la bordure */
+    -fx-padding: 5px; /* Espacement interne */
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.2) , 10,0,0,1 ); /* Ombre */
+}
+
+/* Style pour la barre de défilement */
+.scroll-bar:vertical {
+    -fx-background-color: #4a03fc; /* Couleur de fond */
+}
+
+.scroll-bar:vertical:hover {
+    -fx-background-color: #0234ff; /* Couleur de fond au survol */
+}
+
+.scroll-bar:vertical:pressed {
+    -fx-background-color: #24007c; /* Couleur de fond enfoncé */
+}
+.scroll-bar:horizontal {
+    -fx-background-color: #4a03fc; /* Couleur de fond */
+}
+
+.scroll-bar:horizontal:hover {
+    -fx-background-color: #0234ff; /* Couleur de fond au survol */
+}
+
+.scroll-bar:horizontal:pressed {
+    -fx-background-color: #24007c; /* Couleur de fond enfoncé */
+}
+
+
+/* Style pour le FlowPane */
+.flow-pane {
+    -fx-padding: 5; /* Espacement interne du FlowPane */
+    -fx-hgap: 20; /* Espacement horizontal entre les éléments du FlowPane */
+    -fx-vgap: 20; /* Espacement vertical entre les éléments du FlowPane */
+    -fx-background-color:#fccaca ;
+
+}
+
+/* Style pour chaque ligne dans le contenu */
+#flowp .line {
+    -fx-padding: 5px; /* Espacement interne */
+    -fx-font-size: 15px; /* Taille de la police */
+    -fx-border-color: #fccaca; /* Couleur de la bordure */
+    -fx-border-width: 1px; /* Largeur de la bordure */
+    -fx-border-radius: 5px; /* Rayon des coins de la bordure */
+    -fx-background-color: #fdc6b2; /* Couleur de fond par défaut */
+    -fx-cursor: hand; /* Curseur au survol */
+}
+
+/* Style pour chaque ligne lorsqu'elle est survolée */
+#flowp .line:hover {
+    -fx-background-color: #91affc; /* Couleur de fond au survol */
+}
+
+/* Style pour chaque ligne lorsqu'elle est cliquée */
+#flowp .line:pressed {
+    -fx-background-color: #8b9afc; /* Couleur de fond lors du clic */
+}
+/* Style pour les boutons */
+.button {
+    -fx-background-color: rgb(255, 255, 255); /* Couleur de fond des boutons */
+    /*-fx-text-fill: white; /* Couleur du texte des boutons */
+    -fx-font-size: 14px; /* Taille de la police */
+    /*-fx-pref-width: 150px; /* Largeur préférée des boutons */
+    /*-fx-pref-height: 40px; /* Hauteur préférée des boutons */
+}
+
+/* Style pour les boutons au survol */
+.button:hover {
+    -fx-background-color: rgb(253, 109, 6); /* Couleur de fond des boutons au survol */
+}
