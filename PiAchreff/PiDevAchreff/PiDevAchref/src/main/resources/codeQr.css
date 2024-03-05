@@ -1,0 +1,32 @@
+/* Set the background color of the AnchorPane */
+.root {
+    -fx-background-color: #f0f0f0;
+}
+
+/* Style the ImageView */
+#qraffiche {
+    -fx-image: url; /* Replace with the path to your QR code image */
+    -fx-background-color: #ffffff;
+    -fx-border-color: #000000;
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+}
+
+/* Style the Home button */
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14;
+    -fx-padding: 10 20;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.button:hover {
+    -fx-background-color: #3e8e41;
+}
+
+.button:pressed {
+    -fx-background-color: #2b6624;
+}

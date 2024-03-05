@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="200" prefWidth="400" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controler.FormulaireControler">
+    <children>
+        <Label fx:id="eventTitleLabel" layoutX="142.0" layoutY="14.0" />
+        <Label layoutX="8.0" layoutY="104.0" text="Nombre de tickets:" />
+        <Button layoutX="165.0" layoutY="148.0" mnemonicParsing="false" onAction="#confirmerReservation" text="Confirmer" />
+      <TextField fx:id="prenomtxt" layoutX="142.0" layoutY="60.0" promptText="prenom" />
+      <TextField fx:id="nomtxt" layoutX="142.0" layoutY="19.0" promptText="nom" />
+      <Text layoutX="75.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom:" />
+      <Text layoutX="67.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prenom:" />
+      <TextField fx:id="nbtxt" layoutX="143.0" layoutY="100.0" promptText="nbtickets" />
+    </children>
+</AnchorPane>

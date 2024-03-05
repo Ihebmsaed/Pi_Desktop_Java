@@ -1,0 +1,37 @@
+/* Style du fond d'écran */
+#AnchorPane {
+    -fx-background-color: #f0f0f0; /* Couleur de fond */
+}
+
+/* Style des textes */
+.text {
+    -fx-font-family: "Arial"; /* Police de caractères */
+    -fx-fill: #333333; /* Couleur du texte */
+}
+
+/* Style des titres */
+.title {
+    -fx-font-size: 24px; /* Taille de la police */
+    -fx-font-weight: bold; /* Gras */
+}
+
+/* Style des boutons */
+.button {
+    -fx-background-color: #007bff; /* Couleur de fond */
+    -fx-text-fill: #ffffff; /* Couleur du texte */
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-font-weight: bold; /* Gras */
+    -fx-padding: 8px 16px; /* Espacement interne */
+    -fx-border-radius: 5px; /* Bordure arrondie */
+}
+
+/* Style des boutons au survol */
+.button:hover {
+    -fx-background-color: #0056b3; /* Couleur de fond au survol */
+}
+
+/* Style des boutons au clic */
+.button:pressed {
+    -fx-background-color: #003366; /* Couleur de fond au clic */
+}
+

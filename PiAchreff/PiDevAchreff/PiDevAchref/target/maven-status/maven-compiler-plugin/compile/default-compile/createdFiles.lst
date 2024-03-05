@@ -1,0 +1,8 @@
+controler\ListeEventControler.class
+controler\AfficheListeEventControler.class
+controler\QrCode.class
+entities\Local.class
+controler\QrAffiche.class
+services\LocalService.class
+controler\FormulaireControler.class
+controler\ReservationControler.class

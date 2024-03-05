@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="10.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controler.TicketController">
+    <children>
+        <Label fx:id="eventIdLabel" />
+        <Label fx:id="reservationIdLabel" />
+        <Label fx:id="ticketCountLabel" />
+    </children>
+</VBox>
