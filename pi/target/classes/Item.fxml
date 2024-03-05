@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import java.lang.*?>
+<Pane prefHeight="52.0" prefWidth="652.0" style="-fx-border-color: #503257;" stylesheets="@style1.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controles.ItemController">
+   <children>
+        <Label fx:id="titre" layoutX="38.0" layoutY="9.0" prefHeight="28.0" prefWidth="115.0" text="Reponse">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Button layoutX="276.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleDeleteButton" prefHeight="25.0" prefWidth="115.0" stylesheets="@fullpackstyling.css" text="Supprimer" textFill="WHITE">
+         <styleClass>
+            <String fx:value="search-button" />
+            <String fx:value="shadow" />
+         </styleClass></Button>
+   </children>
+   <styleClass>
+      <String fx:value="corner" />
+      <String fx:value="scroll-pane" />
+      <String fx:value="thumb" />
+      <String fx:value="track" />
+   </styleClass>
+</Pane>
